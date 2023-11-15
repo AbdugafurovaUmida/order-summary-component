@@ -1,0 +1,217 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: #1F2E55;
+}
+
+.button {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.button_bordered {
+  width: 100%;
+  padding: 15px 0;
+  color: #FFF;
+  background-color: #382AE1;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  border: 1px solid transparent;
+}
+.button_colored {
+  color: #717FA6;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.section {
+  width: 100%;
+  background-color: #E0E8FF;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    background-image: url("../../images/pattern-background-desktop.svg");
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.inner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 327px;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card__top {
+  height: 160px;
+  background-image: url("../../images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__main {
+  padding: 32px 32px 24px;
+  text-align: center;
+  background-color: #FFF;
+}
+.card__bottom {
+  border-radius: 0px 0px 20px 20px;
+  background: #FFF;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  padding: 0 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.card__title {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.card__text {
+  color: #717FA6;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 450px;
+  }
+  .card__top {
+    height: 220px;
+  }
+  .card__main {
+    padding: 45px 48px 32px;
+  }
+  .card__bottom {
+    padding: 0 48px 48px;
+    gap: 32px;
+  }
+  .card__title {
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 17px;
+  }
+  .card__text {
+    color: #717FA6;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #F7F9FF;
+  padding: 16px;
+  border-radius: 11px;
+}
+.summary__name {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+.summary__price {
+  color: #717FA6;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.summary__link {
+  color: #382AE1;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.summary__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.summary__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media screen and (min-width: 768px) {
+  .summary {
+    padding: 25px 24px;
+  }
+  .summary__name {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+  .summary__price {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .summary__link {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}/*# sourceMappingURL=style.css.map */

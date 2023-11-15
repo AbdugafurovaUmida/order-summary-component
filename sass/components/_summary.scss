@@ -1,0 +1,38 @@
+.summary {
+    @include display();
+    background-color: $background-color-secondary;
+    padding: 16px;
+    border-radius: 11px;
+    &__name {
+        @include font($size: 1.4rem);
+        margin-bottom: 3px;
+    }
+    &__price {
+        color: $color-light;
+        @include font($size: 1.4rem, $weight: 500);
+    }
+    &__link {
+        color: $color-secondary;
+        @include font($size: 1.3rem, $weight: 700);
+    }
+    &__info {
+        @include display($flex: flex, $items: center, $justify: center, $direction: column);
+        margin-left: 20px;
+    }
+    &__content {
+        @include display();
+    }
+    @media screen and (min-width: 768px) {
+        padding: 25px 24px;
+        &__name {
+            @include font($size: 1.6rem);
+            margin-bottom: 6px;
+        }
+        &__price {
+            @include font($size: 1.6rem, $weight: 500);
+        }
+        &__link {
+            @include font($size: 1.4rem, $weight: 700);
+        }
+    }
+}

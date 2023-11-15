@@ -1,0 +1,61 @@
+.card {
+    width: 100%;
+    max-width: 327px;
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    &__top {
+        height: 160px;
+        background-image: url("../../images/illustration-hero.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    &__main {
+        padding: 32px 32px 24px;
+        text-align: center;
+        background-color: $color-white;
+    }
+    &__bottom {
+        border-radius: 0px 0px 20px 20px;
+        background: $color-white;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+        padding: 0 24px 32px;
+        @include display($flex: flex, $items: center, $justify: center, $direction: column);
+        gap: 24px;
+    }
+    &__title {
+        @include font($size: 2.2rem);
+        margin-bottom: 16px;
+    }
+    &__text {
+        color: $color-light;
+        @include font($size: 1.5rem, $weight: 500);
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 450px;
+        &__top {
+            height: 220px;
+        }
+        &__main {
+            padding: 45px 48px 32px;
+        }
+        &__bottom {
+            padding: 0 48px 48px;
+            gap: 32px;
+        }
+        &__title {
+            @include font($size: 2.8rem);
+            margin-bottom: 17px;
+        }
+        &__text {
+            color: $color-light;
+            @include font($size: 1.6rem, $height: 26px, $weight: 500);
+            margin-bottom: 20px;
+        }
+    }
+}
